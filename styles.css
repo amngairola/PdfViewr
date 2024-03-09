@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.top-bar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the top left */
+}
+
+.input-wrapper {
+  padding-left: 5px; /* Left padding for the input and button */
+}
+
+.input {
+  display: inline-block;
+  margin-right: 10px; /* Add some space between the input and button */
+}
+
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.page-info {
+  color: #fff;
+}
+
+.canvas-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#pdf-render {
+  border: 1px solid #ccc;
+  background-color: #fff;
+}

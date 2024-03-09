@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/e331533522.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>PDF viewer</title>
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="input-wrapper">
+        <input class="input" type="file" id="input" accept=".pdf" />
+        <button class="btn" id="input-btn" onclick="loadPdf()">
+          <i class="fa-solid fa-file-pdf">view</i>
+        </button>
+      </div>
+
+      <button class="btn" id="prev-page">
+        <i class="fas fa-arrow-circle-left"></i>
+        prev page
+      </button>
+      <button class="btn" id="next-page">
+        next page<i class="fas fa-arrow-circle-right"></i>
+      </button>
+      <span class="page-info">
+        Page <span id="page-num"> </span> of
+        <span id="page" class="count"></span>
+      </span>
+    </div>
+
+    <canvas id="pdf-render"> </canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    <script src="Index.js"></script>
+  </body>
+</html>
