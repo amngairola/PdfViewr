@@ -2,7 +2,6 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
 }
 
 .top-bar {
@@ -11,16 +10,16 @@ body {
   padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Align items to the top left */
+  justify-content: space-between;
 }
 
 .input-wrapper {
-  padding-left: 5px; /* Left padding for the input and button */
+  display: flex;
+  align-items: center;
 }
 
 .input {
-  display: inline-block;
-  margin-right: 10px; /* Add some space between the input and button */
+  /* Remove display: none; to make the input visible */
 }
 
 .btn {
@@ -31,6 +30,11 @@ body {
   cursor: pointer;
   border-radius: 4px;
   transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.btn:first-child {
+  margin-left: 0;
 }
 
 .btn:hover {
